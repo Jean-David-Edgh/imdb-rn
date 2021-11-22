@@ -147,9 +147,9 @@ const App = () => {
         </View>
       </ScrollView>
 
-      <View style={styles.container}>
-        <StatusBar style="auto" />
-      </View>
+      {/* <View style={styles.container}> */}
+      <StatusBar style="light" backgroundColor="black" />
+      {/* </View> */}
     </View>
   );
 };
@@ -158,7 +158,7 @@ export default App;
 
 const styles = StyleSheet.create({
   scrollView: {
-    paddingTop: Constants.statusBarHeight,
+    marginTop: Constants.statusBarHeight,
   },
   container: {
     flex: 1,
@@ -195,7 +195,7 @@ const styles = StyleSheet.create({
   container1: {
     marginLeft: 20,
     marginBottom: 5,
-    marginTop: 20,
+    // marginTop: 20,
     fontSize: 30,
   },
   container2: {
